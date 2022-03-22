@@ -1,6 +1,133 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <meta charset="utf-8" />
 <meta name="author" content="Andre John Ngay" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Exercise 0</title>
+<title>Registration Form Ngay</title>
+
+<body>
+
+    <div>
+    <h1>Sign Up Now!</h1>
+    </div>
+
+    <div>
+    <p>Fields marked "*" are required.</p>
+    </div>
+
+    <div>
+    <form>
+        <fieldset>
+        <table>
+            <tr>
+                <legend>Your Details</legend>
+            </tr>
+            <tr>
+                <td align="left">Name*</td>
+                <td align="left"><input type="text" name="name" placeholder="Full Name" maxlength="20" required/></td><br />
+            </tr>
+            <tr>
+                <td align="left">Email*</td>
+                <td align="left"><input type="text" name="email" placeholder="e.g. 20213762@s.ubaguio.edu" maxlength="20"/></td><br />
+            </tr>
+            <tr>
+                <td align="left">Phone*</td>
+                <td align="left"><input type="text" name="phone" placeholder="Please enter 11 character password" maxlength="11"/></td><br />
+            </tr>
+        </table>
+        </fieldset>
+    </form>
+    </div>
+
+    <div>
+    <form>
+        <fieldset>
+        <table>
+            <tr>
+                <legend>Delivery Address</legend>
+            </tr>
+            <tr>
+                <td align="left">Address 1* </td>
+                <td align="left"><input type="text" name="address" placeholder="House # and street" maxlength="15"/></td><br />
+            </tr>
+            <tr>
+                <td align="left">District/Barangay* </td>
+                <td align="left"><input type="text" name="distric_barangay" placeholder="e.g. Pico" maxlength="20"/></td><br />
+            </tr>
+            <tr>
+                <td align="left"><label for="city">City*</label></td>
+                <td>
+                <select name="city" id="city">
+                    <option value="Baguio City">Baguio City</option>
+                    <option value="Manila">Manila</option>
+                    <option value="Quezon City">Quezon City</option>
+                    <option value="Davao City">Davao City</option>
+                    <option value="Cebu City">Cebu City</option>
+                    <option value="Makati">Makati</option>
+                    <option value="Caloocan">Caloocan</option>
+                    <option value="Cagayan de Oro">Cagayan de Oro</option>
+                </td>
+            </tr>
+            </select><br />
+            <tr>
+                <td align="left">Postal Code*</td>
+                <td align="left"><input type="text" name="postalcode" placeholder="e.g. 2601" maxlength="4"/></td><br />
+            </tr>
+            <tr>
+                <td align="left"><label for="province">Province*</label></td>
+                <td>
+                    <select name="province" id="province">
+                        <option value="Ilocos Norte">Ilocos Norte</option>
+                        <option value="Ilocos Sur">Ilocos Sur</option>
+                        <option value="La Union">La Union</option>
+                        <option value="Pangasinan">Pangasinan</option>
+                        <option value="Batanes">Batanes</option>
+                        <option value="Cagayan">Cagayan</option>
+                        <option value="Isabela">Isabela</option>
+                        <option value="Nueva Vizcaya">Nueva Vizcaya</option>
+                </td>
+            </select><br />
+            </tr>
+        </table>
+        </fieldset>
+    </form>
+    </div>
+
+    <div>
+    <form>
+        <fieldset>
+        <table>
+        <tr>
+            <legend>Membership Information</legend>
+        </tr>
+        <tr>
+            <td align="left">Username* </td>
+            <td align="left"><input type="text" name="username" placeholder="At least 8 alphanumeric characters"/></td><br />
+        </tr>
+        <tr>
+            <td align="left">Password* </td>
+            <td align="left"><input type="password" name="password" placeholder="e.g. mypassword123"/></td><br />
+        </tr>
+        <tr>
+            <td>Magazine Subscriptions</td><br>
+            <td align="left">
+                <input type="checkbox" id="PCMagazine" name="PCMagazine" value="PCMagazine">
+                <label for="checkbox">PCMagazine</label><br>
+                <input type="checkbox" id="Wired" name="Wired" value="Wired">
+                <label for="Wired">Wired</label><br>
+                <input type="checkbox" id="Computerworld" name="Computerworld" value="Computerworld">
+                <label for="Computerworld">Computerworld</label><br>
+                <input type="checkbox" id="idontsubscribe" name="idontsubscribe" value="idontsubscribe">
+                <label for="idontsubscribe">I don't subsribe</label><br>
+                <input type="checkbox" id="Other" name="Other" value="Other">
+                <label for="Other">Other</label><br>
+        </td>
+        </tr>
+        </table>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+    
+
+</body>
