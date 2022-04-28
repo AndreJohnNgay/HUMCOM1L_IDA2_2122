@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>array</p>
+<p id="array"></p>
+<br>
+<p>concat</p>
+<p id="concat"></p>
+<br>
+<p>boolean</p>
+<p id="boolean"></p>
+<br>
+<p>js Classes</p>
+<p id="jsClasses"></p>
+<br>
+<p>js Date</p>
+<p id="jsDate"></p>
+<br>
+<p>js Error</p>
+<p id="jsError" style="color:red"></p>
+
+<script>
+const cars = ["John", "Jeff", "Jonathan"];
+document.getElementById("array").innerHTML = cars;
+
+const arr1 = ["Boxing", "Muay Thai"];
+const arr2 = ["Coding", "Video Games", "Anime"];
+const hobbies = arr1.concat(arr2); 
+document.getElementById("concat").innerHTML = hobbies;
+
+document.getElementById("boolean").innerHTML = Boolean(15 > 14);
+
+class Car {
+  constructor(brand) {
+    this.carName = brand;
+  }
+}
+myCar = new Car("Nissan");
+document.getElementById("jsClasses").innerHTML = "My car is a " + myCar.carName;
+
+const d = new Date();
+document.getElementById("jsDate").innerHTML = d;
+
+try {
+  adddlert("Welcome my g!");
+}
+catch(err) {
+  document.getElementById("jsError").innerHTML = 
+  err.name + "<br>" + err.message;
+}
+</script>
+
+</body>
+</html>
